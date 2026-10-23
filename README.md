@@ -7,8 +7,9 @@ I'm a DevOps engineer interested in Kubernetes infrastructure, networking, and r
 - **[Calico operator](https://github.com/tigera/operator/pull/5290)** — Fixed a startup race that could give new pods the wrong network MTU when Calico auto-detects it. The operator now waits for the MTU file before creating the pod interface.
 - **[MetalLB](https://github.com/metallb/metallb/pull/3134)** — Stopped the speaker from repeating `nodeAssigned` events on every reconcile. Events now reflect actual announcement changes.
 - **[Submariner](https://github.com/submariner-io/submariner/pull/4216)** — Fixed stale Prometheus connection metrics so they report each cable’s current status and update counts when cables disconnect or are replaced.
+- **[Submariner Admiral](https://github.com/submariner-io/admiral/pull/1430)** — Fixed broker client startup when the broker API is unreachable, preserving the CA from the broker secret so TLS connections can succeed once the API comes back.
 
-All three contributions have been merged upstream.
+All four contributions have been merged upstream.
 
 ## Projects
 
