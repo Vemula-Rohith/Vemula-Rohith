@@ -8,8 +8,9 @@ I'm a DevOps engineer interested in Kubernetes infrastructure, networking, and r
 - **[MetalLB](https://github.com/metallb/metallb/pull/3134)** — Stopped the speaker from repeating `nodeAssigned` events on every reconcile. Events now reflect actual announcement changes.
 - **[Submariner](https://github.com/submariner-io/submariner/pull/4216)** — Fixed stale Prometheus connection metrics so they report each cable’s current status and update counts when cables disconnect or are replaced.
 - **[Submariner Admiral](https://github.com/submariner-io/admiral/pull/1430)** — Fixed broker client startup when the broker API is unreachable, preserving the CA from the broker secret so TLS connections can succeed once the API comes back.
+- **[Ceph CSI Operator](https://github.com/ceph/ceph-csi-operator/pull/646)** — Fixed the ClientProfile controller so it stops requeuing deleted profiles and handles profile deletion during status updates.
 
-All four contributions have been merged upstream.
+All five contributions have been merged upstream.
 
 ## Projects
 
